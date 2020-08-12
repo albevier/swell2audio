@@ -58,7 +58,7 @@ def getZ(stn, deploy, start, end, qc):
 
 	#z = np.ma.masked_where(qcFlag >= qc,z)
 
-	return(z)
+	return(z.data)
 
 def z2audio(z, stnSampleRate):
 	wavSampleRate = 44100 # [Hz]
@@ -96,8 +96,6 @@ if __name__ == "__main__":
 	plt.plot(time,z)
 	plt.savefig('zDisp_plot.png')
 
-	# output of getZ is a masked array, but don't care, just want data
-	z = z.data
 	# get rid of unreasonabley bad data
 	z = z[z > -100]
 
