@@ -6,7 +6,7 @@
 - Transform the height displacement of ocean waves into an audio signal.
 
 ### Requirements:
-- This projects uses python 3.8.0; the project is compatible with pyenv 1.2.20 for python version management via the .python-version file.
+- This projects uses python 3.10.0
 - For package requirements, see requirements.txt; install using `pip3 install -r requirements.txt`
 
 ### Station information:
